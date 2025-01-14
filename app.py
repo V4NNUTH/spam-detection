@@ -5,6 +5,7 @@ from nltk.stem import LancasterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pickle
 
+nltk.download('punkt')
 # Initialize required objects
 lstem = LancasterStemmer()
 tfvec = TfidfVectorizer(stop_words='english')
